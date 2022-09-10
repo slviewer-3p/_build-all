@@ -17,8 +17,7 @@ jobs:
       - name: Build tarball
         run: ./create_sysroot.sh
 
-      - name: publish ${{ matrix.os }} artifacts
-          if: runner.os == 'macOS'
+      - name: publish ${{ runner.os }} artifacts
           uses: actions/upload-artifact@v3
           with:
             name: ${{ runner.os }}-artifacts.zip
