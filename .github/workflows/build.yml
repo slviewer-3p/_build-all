@@ -11,7 +11,16 @@ jobs:
           submodules: recursive
           token: ${{ secrets.REPO_TOKEN }}
 
-      - name: debug
-        run: ls -l
+      - name: Build app packages
+        run: ./build.sh
 
+      - name: Build tarball
+        run: ./create_sysroot.sh
+
+      - name: publish ${{ matrix.os }} artifacts
+          if: runner.os == 'macOS'
+          uses: actions/upload-artifact@v3
+          with:
+            name: ${{ runner.os }}-artifacts.zip
+            path: results/*
 
