@@ -2,16 +2,17 @@ name: Build packages
 on: workflow_dispatch
 jobs:
   runs-on: ubuntu-20.04
-steps:
-  - name: Get the code
-    uses: actions/checkout@v3
+ 
+  steps:
+    - name: Get the code
+      uses: actions/checkout@v3
 
-  - name: debug
-    run: ls -l
+    - name: debug
+      run: ls -l
 	
-  - name: Update modules
-    run: ./update_modules.sh
+    - name: Update modules
+      run: ./update_modules.sh
 
-  - name: debug
-    run: ls -l
+    - name: debug
+      run: ls -l
 	
