@@ -7,11 +7,11 @@ steps:
     uses: actions/checkout@v3
 
   - name: debug
-    run: ls -l && pwd
+    run: ls -l
 	
   - name: Update modules
     run: ./update_modules.sh
 
   - name: debug
-    run: ls -l && pwd
+    run: ls -l
 	
