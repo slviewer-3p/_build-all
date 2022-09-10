@@ -136,3 +136,6 @@
 [submodule "repo/cef"]
 	path = repo/cef
 	url = git@github.com:slviewer-3p/cef
+[submodule "repo/3p-mikktspace"]
+	path = repo/3p-mikktspace
+	url = git@github.com:slviewer-3p/3p-mikktspace.git
