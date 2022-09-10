@@ -11,6 +11,10 @@ jobs:
           submodules: recursive
           token: ${{ secrets.REPO_TOKEN }}
 
+      - name: Install required packages
+        if: runner.os == "Linux"
+        run: apt install -y mesa-common-dev libgl1-mesa-dev libglu1-mesa-dev autoconf libtool  libxext-dev python-is-python3 libgstreamer1.0-dev  gawk gtk-doc-tools  gettext gperf 
+
       - name: install autobuild
         run: pip3 install git+https://github.com/Nicky-D/autobuild@main_nd
 
