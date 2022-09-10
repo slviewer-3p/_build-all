@@ -15,6 +15,9 @@ jobs:
         if: runner.os == 'Linux'
         run: sudo apt install -y mesa-common-dev libgl1-mesa-dev libglu1-mesa-dev autoconf libtool  libxext-dev python-is-python3 libgstreamer1.0-dev  gawk gtk-doc-tools  gettext gperf 
 
+      - name: Install ninja
+        run: pip3 install ninja
+
       - name: install autobuild
         run: pip3 install git+https://github.com/Nicky-D/autobuild@main_nd
 
