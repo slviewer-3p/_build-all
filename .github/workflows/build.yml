@@ -12,7 +12,7 @@ jobs:
           token: ${{ secrets.REPO_TOKEN }}
 
       - name: install autobuild
-         run: pip3 install git+https://github.com/Nicky-D/autobuild@main_nd
+        run: pip3 install git+https://github.com/Nicky-D/autobuild@main_nd
 
       - name: Build app packages
         run: ./build.sh
