@@ -7,13 +7,10 @@ jobs:
     steps:
       - name: Get the code
         uses: actions/checkout@v3
+		with:
+          submodules: recursive
 
       - name: debug
         run: ls -l
 
-      - name: Update modules
-        run: ./update_modules.sh
-
-      - name: debug
-        run: ls -l
 
