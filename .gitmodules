@@ -1,0 +1,135 @@
+[submodule "repo/3p-apr_suite"]
+	path = repo/3p-apr_suite
+	url = git@github.com:slviewer-3p/3p-apr_suite
+[submodule "repo/3p-boost"]
+	path = repo/3p-boost
+	url = git@github.com:slviewer-3p/3p-boost
+[submodule "repo/3p-colladadom"]
+	path = repo/3p-colladadom
+	url = git@github.com:slviewer-3p/3p-colladadom
+[submodule "repo/3p-cubemap_to_eqr_js"]
+	path = repo/3p-cubemap_to_eqr_js
+	url = git@github.com:slviewer-3p/3p-cubemap_to_eqr_js
+[submodule "repo/3p-curl"]
+	path = repo/3p-curl
+	url = git@github.com:slviewer-3p/3p-curl
+[submodule "repo/3p-expat"]
+	path = repo/3p-expat
+	url = git@github.com:slviewer-3p/3p-expat
+[submodule "repo/3p-fltk"]
+	path = repo/3p-fltk
+	url = git@github.com:slviewer-3p/3p-fltk
+[submodule "repo/3p-fontconfig"]
+	path = repo/3p-fontconfig
+	url = git@github.com:slviewer-3p/3p-fontconfig
+[submodule "repo/3p-freetype"]
+	path = repo/3p-freetype
+	url = git@github.com:slviewer-3p/3p-freetype
+[submodule "repo/3p-glib"]
+	path = repo/3p-glib
+	url = git@github.com:slviewer-3p/3p-glib
+[submodule "repo/3p-gstreamer10"]
+	path = repo/3p-gstreamer10
+	url = git@github.com:slviewer-3p/3p-gstreamer10
+[submodule "repo/3p-icu4c"]
+	path = repo/3p-icu4c
+	url = git@github.com:slviewer-3p/3p-icu4c
+[submodule "repo/3p-jasper"]
+	path = repo/3p-jasper
+	url = git@github.com:slviewer-3p/3p-jasper
+[submodule "repo/3p-jemalloc"]
+	path = repo/3p-jemalloc
+	url = git@github.com:slviewer-3p/3p-jemalloc
+[submodule "repo/3p-jpeg_encoder_js"]
+	path = repo/3p-jpeg_encoder_js
+	url = git@github.com:slviewer-3p/3p-jpeg_encoder_js
+[submodule "repo/3p-jpeglib"]
+	path = repo/3p-jpeglib
+	url = git@github.com:slviewer-3p/3p-jpeglib
+[submodule "repo/3p-jsoncpp"]
+	path = repo/3p-jsoncpp
+	url = git@github.com:slviewer-3p/3p-jsoncpp
+[submodule "repo/3p-libbacktrace"]
+	path = repo/3p-libbacktrace
+	url = git@github.com:slviewer-3p/3p-libbacktrace
+[submodule "repo/3p-libhunspell"]
+	path = repo/3p-libhunspell
+	url = git@github.com:slviewer-3p/3p-libhunspell
+[submodule "repo/3p-libpng"]
+	path = repo/3p-libpng
+	url = git@github.com:slviewer-3p/3p-libpng
+[submodule "repo/3p-libuuid"]
+	path = repo/3p-libuuid
+	url = git@github.com:slviewer-3p/3p-libuuid
+[submodule "repo/3p-libxml2"]
+	path = repo/3p-libxml2
+	url = git@github.com:slviewer-3p/3p-libxml2
+[submodule "repo/3p-meshoptimizer"]
+	path = repo/3p-meshoptimizer
+	url = git@github.com:slviewer-3p/3p-meshoptimizer
+[submodule "repo/3p-minizip-ng"]
+	path = repo/3p-minizip-ng
+	url = git@github.com:slviewer-3p/3p-minizip-ng
+[submodule "repo/3p-ndphysicsstub"]
+	path = repo/3p-ndphysicsstub
+	url = git@github.com:slviewer-3p/3p-ndphysicsstub
+[submodule "repo/3p-nghttp2"]
+	path = repo/3p-nghttp2
+	url = git@github.com:slviewer-3p/3p-nghttp2
+[submodule "repo/3p-ogg_vorbis"]
+	path = repo/3p-ogg_vorbis
+	url = git@github.com:slviewer-3p/3p-ogg_vorbis
+[submodule "repo/3p-openjpeg"]
+	path = repo/3p-openjpeg
+	url = git@github.com:slviewer-3p/3p-openjpeg
+[submodule "repo/3p-openjpeg2"]
+	path = repo/3p-openjpeg2
+	url = git@github.com:slviewer-3p/3p-openjpeg2
+[submodule "repo/3p-open-libndofdev_sdl1"]
+	path = repo/3p-open-libndofdev_sdl1
+	url = git@github.com:slviewer-3p/3p-open-libndofdev_sdl1
+[submodule "repo/3p-open-libndofdev_sdl2"]
+	path = repo/3p-open-libndofdev_sdl2
+	url = git@github.com:slviewer-3p/3p-open-libndofdev_sdl2
+[submodule "repo/3p-openssl"]
+	path = repo/3p-openssl
+	url = git@github.com:slviewer-3p/3p-openssl
+[submodule "repo/3p-pcre"]
+	path = repo/3p-pcre
+	url = git@github.com:slviewer-3p/3p-pcre
+[submodule "repo/3p-sdl1"]
+	path = repo/3p-sdl1
+	url = git@github.com:slviewer-3p/3p-sdl1
+[submodule "repo/3p-sdl2"]
+	path = repo/3p-sdl2
+	url = git@github.com:slviewer-3p/3p-sdl2
+[submodule "repo/3p-slvoice"]
+	path = repo/3p-slvoice
+	url = git@github.com:slviewer-3p/3p-slvoice
+[submodule "repo/3p-three_js"]
+	path = repo/3p-three_js
+	url = git@github.com:slviewer-3p/3p-three_js
+[submodule "repo/3p-tinygltf"]
+	path = repo/3p-tinygltf
+	url = git@github.com:slviewer-3p/3p-tinygltf
+[submodule "repo/3p-tracy"]
+	path = repo/3p-tracy
+	url = git@github.com:slviewer-3p/3p-tracy
+[submodule "repo/3p-uriparser"]
+	path = repo/3p-uriparser
+	url = git@github.com:slviewer-3p/3p-uriparser
+[submodule "repo/3p-xmlrpc-epi"]
+	path = repo/3p-xmlrpc-epi
+	url = git@github.com:slviewer-3p/3p-xmlrpc-epi
+[submodule "repo/3p-zlib"]
+	path = repo/3p-zlib
+	url = git@github.com:slviewer-3p/3p-zlib
+[submodule "repo/3p-zlib-ng"]
+	path = repo/3p-zlib-ng
+	url = git@github.com:slviewer-3p/3p-zlib-ng
+[submodule "repo/dullahan"]
+	path = repo/dullahan
+	url = git@github.com:slviewer-3p/dullahan
+[submodule "3p-builder"]
+	path = 3p-builder
+	url = git@github.com:Nicky-D/3p-builder.git
