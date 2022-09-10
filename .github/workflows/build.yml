@@ -18,8 +18,8 @@ jobs:
         run: ./create_sysroot.sh
 
       - name: publish ${{ runner.os }} artifacts
-          uses: actions/upload-artifact@v3
-          with:
-            name: ${{ runner.os }}-artifacts.zip
-            path: results/*
+        uses: actions/upload-artifact@v3
+        with:
+          name: ${{ runner.os }}-artifacts.zip
+          path: _results/*
 
