@@ -139,3 +139,15 @@
 [submodule "repo/3p-mikktspace"]
 	path = repo/3p-mikktspace
 	url = git@github.com:slviewer-3p/3p-mikktspace.git
+[submodule "repo/3p-dictionaries"]
+	path = repo/3p-dictionaries
+	url = git@github.com:slviewer-3p/3p-dictionaries.git
+[submodule "repo/3p-glext"]
+	path = repo/3p-glext
+	url = git@github.com:slviewer-3p/3p-glext.git
+[submodule "repo/3p-vulkan-gltf-pbr"]
+	path = repo/3p-vulkan-gltf-pbr
+	url = git@github.com:slviewer-3p/3p-vulkan-gltf-pbr.git
+[submodule "repo/llca"]
+	path = repo/llca
+	url = git@github.com:slviewer-3p/llca.git
