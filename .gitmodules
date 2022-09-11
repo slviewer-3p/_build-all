@@ -151,3 +151,6 @@
 [submodule "repo/llca"]
 	path = repo/llca
 	url = git@github.com:slviewer-3p/llca.git
+[submodule "repo/3p-openal"]
+	path = repo/3p-openal
+	url = git@github.com:slviewer-3p/3p-openal.git
