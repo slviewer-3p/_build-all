@@ -30,13 +30,13 @@ jobs:
       - name: publish sysroot
         uses: actions/upload-artifact@v3
         with:
-          name: ${{ runner.os }}-${{runner.arch}}-sysroot
+          name: ${{ runner.os }}-${{runner.arch}}-${{github.ref_name}}-sysroot
           path: _results/sysroot.tar.bz2
 
       - name: publish 3p packages
         uses: actions/upload-artifact@v3
         with:
-          name: ${{ runner.os }}-${{runner.arch}}-3ps
+          name: ${{ runner.os }}-${{runner.arch}}-${{github.ref_name}}-3ps
           path: |
             _results/*.bz2
             !_results/sysroot.tar.bz2
