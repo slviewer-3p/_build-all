@@ -27,9 +27,16 @@ jobs:
       - name: Build tarball
         run: ./create_sysroot.sh
 
-      - name: publish artifacts
+      - name: publish sysroot
         uses: actions/upload-artifact@v3
         with:
-          name: ${{ runner.os }}-${{runner.arch}}-artifacts.zip
-          path: _results/*
+          name: ${{ runner.os }}-${{runner.arch}}-sysroot
+          path: _results/sysroot.tar.bz2
 
+      - name: publish 3p packages
+        uses: actions/upload-artifact@v3
+        with:
+          name: ${{ runner.os }}-${{runner.arch}}-3ps
+          path: |
+            _results/*.bz2
+            !_results/sysroot.tar.bz2
