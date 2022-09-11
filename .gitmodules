@@ -154,3 +154,6 @@
 [submodule "repo/3p-openal"]
 	path = repo/3p-openal
 	url = git@github.com:slviewer-3p/3p-openal.git
+[submodule "repo/3p-glh_linear"]
+	path = repo/3p-glh_linear
+	url = git@github.com:slviewer-3p/3p-glh_linear.git
