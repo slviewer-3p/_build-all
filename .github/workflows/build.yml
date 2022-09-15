@@ -27,6 +27,13 @@ jobs:
       - name: Build tarball
         run: ./create_sysroot.sh
 
+      - name: publish logs
+        uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: ${{ runner.os }}-${{runner.arch}}-${{github.ref_name}}-logs
+          path: _buildlog/*
+
       - name: publish sysroot
         uses: actions/upload-artifact@v3
         with:
