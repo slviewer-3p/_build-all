@@ -14,7 +14,7 @@ jobs:
       - name: Run apt update
         if: runner.os == 'Linux'
         run: sudo apt update
-		
+        
       - name: Install required packages
         if: runner.os == 'Linux'
         run: sudo apt install -y mesa-common-dev libgl1-mesa-dev libglu1-mesa-dev autoconf libtool  libxext-dev python-is-python3 libgstreamer1.0-dev  gawk gtk-doc-tools  gettext gperf libibus-1.0-dev fcitx-libs-dev libudev-dev 
