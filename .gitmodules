@@ -133,9 +133,6 @@
 [submodule "3p-builder"]
 	path = 3p-builder
 	url = git@github.com:Nicky-D/3p-builder.git
-[submodule "repo/cef"]
-	path = repo/cef
-	url = git@github.com:slviewer-3p/cef
 [submodule "repo/3p-mikktspace"]
 	path = repo/3p-mikktspace
 	url = git@github.com:slviewer-3p/3p-mikktspace.git
