@@ -43,11 +43,17 @@ jobs:
           name: ${{ runner.os }}-${{runner.arch}}-${{github.ref_name}}-logs
           path: _buildlog/*
 
-      - name: publish sysroot
+      - name: publish sysroot (bz2)
         uses: actions/upload-artifact@v3
         with:
-          name: ${{ runner.os }}-${{runner.arch}}-${{github.ref_name}}-sysroot
+          name: ${{ runner.os }}-${{runner.arch}}-${{github.ref_name}}-sysroot-bz2
           path: _results/sysroot.tar.bz2
+
+      - name: publish sysroot (xz)
+        uses: actions/upload-artifact@v3
+        with:
+          name: ${{ runner.os }}-${{runner.arch}}-${{github.ref_name}}-sysroot-xz
+          path: _results/sysroot.tar.xz
 
       - name: publish 3p packages
         uses: actions/upload-artifact@v3
