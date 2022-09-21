@@ -29,6 +29,11 @@ jobs:
         if: runner.os == 'Linux'
         run: sudo apt install -y python-is-python3
 
+      - name: Try install python setuptools
+        continue-on-error: true
+        if: runner.os == 'Linux'
+        run: pip install setuptools
+
       - name: Install ninja
         run: pip3 install ninja
 
