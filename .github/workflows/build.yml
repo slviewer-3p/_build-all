@@ -7,7 +7,7 @@ on:
       
 jobs:
   build:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-18.04
 
     steps:
       - name: Get the code
@@ -43,13 +43,6 @@ jobs:
           name: ${{ runner.os }}-${{runner.arch}}-${{github.ref_name}}-logs
           retention-days: 7
           path: _buildlog/*
-
-      - name: publish sysroot (bz2)
-        uses: actions/upload-artifact@v3
-        with:
-          name: ${{ runner.os }}-${{runner.arch}}-${{github.ref_name}}-sysroot-bz2
-          retention-days: 7
-          path: _results/sysroot.tar.bz2
 
       - name: publish sysroot (xz)
         uses: actions/upload-artifact@v3
