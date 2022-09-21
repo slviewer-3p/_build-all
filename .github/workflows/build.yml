@@ -22,7 +22,12 @@ jobs:
         
       - name: Install required packages
         if: runner.os == 'Linux'
-        run: sudo apt install -y mesa-common-dev libgl1-mesa-dev libglu1-mesa-dev autoconf libtool  libxext-dev python-is-python3 libgstreamer1.0-dev  gawk gtk-doc-tools  gettext gperf libibus-1.0-dev fcitx-libs-dev libudev-dev 
+        run: sudo apt install -y mesa-common-dev libgl1-mesa-dev libglu1-mesa-dev autoconf libtool  libxext-dev libgstreamer1.0-dev  gawk gtk-doc-tools  gettext gperf libibus-1.0-dev fcitx-libs-dev libudev-dev 
+
+      - name: Try install python-is-python3 (not available in 1804)
+        continue-on-error: true
+        if: runner.os == 'Linux'
+        run: sudo apt install -y python-is-python3
 
       - name: Install ninja
         run: pip3 install ninja
