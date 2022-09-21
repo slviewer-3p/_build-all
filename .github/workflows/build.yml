@@ -26,7 +26,7 @@ jobs:
       - name: Try install python setuptools
         continue-on-error: true
         if: runner.os == 'Linux'
-        run: pip install setuptools
+        run: sudo apt install -y python3-setuptools
 
       - name: Install ninja
         run: pip3 install ninja
