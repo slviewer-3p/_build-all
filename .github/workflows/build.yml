@@ -1,19 +1,32 @@
 name: Build packages
-on: [workflow_dispatch,push]
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - v*
+      
 jobs:
   build:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-18.04
 
     steps:
-      - name: Get the code
-        uses: actions/checkout@v3
-        with:
-          submodules: recursive
-          token: ${{ secrets.REPO_TOKEN }}
-
+      - name: Run apt update
+        if: runner.os == 'Linux'
+        run: sudo apt update
+        
       - name: Install required packages
         if: runner.os == 'Linux'
-        run: sudo apt install -y mesa-common-dev libgl1-mesa-dev libglu1-mesa-dev autoconf libtool  libxext-dev python-is-python3 libgstreamer1.0-dev  gawk gtk-doc-tools  gettext gperf 
+        run: sudo apt install -y mesa-common-dev libgl1-mesa-dev libglu1-mesa-dev autoconf libtool  libxext-dev libgstreamer1.0-dev  gawk gtk-doc-tools  gettext gperf libibus-1.0-dev fcitx-libs-dev libudev-dev 
+
+      - name: Try install python-is-python3 (not available in 1804)
+        continue-on-error: true
+        if: runner.os == 'Linux'
+        run: sudo apt install -y python-is-python3
+
+      - name: Try install python setuptools
+        continue-on-error: true
+        if: runner.os == 'Linux'
+        run: sudo apt install -y python3-setuptools
 
       - name: Install ninja
         run: pip3 install ninja
@@ -21,22 +34,38 @@ jobs:
       - name: install autobuild
         run: pip3 install git+https://github.com/Nicky-D/autobuild@main_nd
 
+      - name: Get the code
+        uses: actions/checkout@v3
+        with:
+          submodules: recursive
+          token: ${{ secrets.REPO_TOKEN }}
+
       - name: Build app packages
         run: ./build.sh
 
       - name: Build tarball
         run: ./create_sysroot.sh
 
-      - name: publish sysroot
+      - name: publish logs
+        uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: ${{ runner.os }}-${{runner.arch}}-${{github.ref_name}}-logs
+          retention-days: 7
+          path: _buildlog/*
+
+      - name: publish sysroot (xz)
         uses: actions/upload-artifact@v3
         with:
-          name: ${{ runner.os }}-${{runner.arch}}-${{github.ref_name}}-sysroot
-          path: _results/sysroot.tar.bz2
+          name: ${{ runner.os }}-${{runner.arch}}-${{github.ref_name}}-sysroot-xz
+          retention-days: 7
+          path: _results/sysroot.tar.xz
 
       - name: publish 3p packages
         uses: actions/upload-artifact@v3
         with:
           name: ${{ runner.os }}-${{runner.arch}}-${{github.ref_name}}-3ps
+          retention-days: 7
           path: |
             _results/*.bz2
             !_results/sysroot.tar.bz2
