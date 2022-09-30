@@ -54,7 +54,7 @@ jobs:
         if: always()
         with:
           name: ${{ runner.os }}-${{runner.arch}}-${{github.ref_name}}-logs
-          retention-days: 90
+          retention-days: 2
           path: _buildlog/*
 
       - name: publish sysroot (xz)
@@ -62,7 +62,7 @@ jobs:
         with:
           name: ${{ runner.os }}-${{runner.arch}}-${{github.ref_name}}-sysroot-xz
           retention-days: 2
-          path: _results/sysroot.*.xz
+          path: _results/sysroot*.xz
 
       - name: publish 3p packages
         uses: actions/upload-artifact@v3
@@ -77,5 +77,5 @@ jobs:
         if: startsWith(github.ref, 'refs/tags/')
         with:
           files: |
-            _results/sysroot.*.xz
+            _results/sysroot*.xz
             _results/*.bz2
