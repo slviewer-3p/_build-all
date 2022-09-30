@@ -3,9 +3,7 @@
 BASE=`pwd`
 
 test -d _results || exit 1
-
 cd _results
-
 test -d temp && rm -rf temp
 
 mkdir -p temp
@@ -19,6 +17,8 @@ autobuild install
 
 cp $BASE/_results/packages.json sysroot/packages/
 ( cd sysroot/packages/ && $BASE/create_packages_info.py > packages-info.txt )
+
+export XZ_DEFAULTS=-T0
 
 tar acf ../sysroot-${GLIBC_VERSION}.tar.xz sysroot
 date --iso-8601=seconds
