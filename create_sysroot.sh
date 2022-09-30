@@ -11,18 +11,16 @@ test -d temp && rm -rf temp
 mkdir -p temp
 cd temp
 
-date --iso-8601=seconds
+GLIBC_VERSION=$(python -c 'import platform; print( "-".join(platform.libc_ver()) )')
+
 sh ../packages_add.sh
-date --iso-8601=seconds
 autobuild installables remove zlib
-date --iso-8601=seconds
 autobuild install
-date --iso-8601=seconds
 
 cp $BASE/_results/packages.json sysroot/packages/
 ( cd sysroot/packages/ && $BASE/create_packages_info.py > packages-info.txt )
 
-tar acf ../sysroot.tar.xz sysroot
+tar acf ../sysroot-${GLIBC_VERSION}.tar.xz sysroot
 date --iso-8601=seconds
 
 cd ..
