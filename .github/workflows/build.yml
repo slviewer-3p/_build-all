@@ -35,7 +35,7 @@ jobs:
         run: pip3 install ninja
 
       - name: install autobuild
-        run: pip3 install git+https://github.com/Nicky-D/autobuild@main_nd
+        run: pip3 install git+https://github.com/Nicky-D/autobuild-py36@main_nd
 
       - name: Get the code
         uses: actions/checkout@v3
