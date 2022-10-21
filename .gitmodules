@@ -19,12 +19,6 @@
 [submodule "repo/3p-fltk"]
 	path = repo/3p-fltk
 	url = git@github.com:slviewer-3p/3p-fltk
-[submodule "repo/3p-fontconfig"]
-	path = repo/3p-fontconfig
-	url = git@github.com:slviewer-3p/3p-fontconfig
-[submodule "repo/3p-freetype"]
-	path = repo/3p-freetype
-	url = git@github.com:slviewer-3p/3p-freetype
 [submodule "repo/3p-glib"]
 	path = repo/3p-glib
 	url = git@github.com:slviewer-3p/3p-glib
@@ -58,9 +52,6 @@
 [submodule "repo/3p-libpng"]
 	path = repo/3p-libpng
 	url = git@github.com:slviewer-3p/3p-libpng
-[submodule "repo/3p-libuuid"]
-	path = repo/3p-libuuid
-	url = git@github.com:slviewer-3p/3p-libuuid
 [submodule "repo/3p-libxml2"]
 	path = repo/3p-libxml2
 	url = git@github.com:slviewer-3p/3p-libxml2
@@ -70,9 +61,6 @@
 [submodule "repo/3p-minizip-ng"]
 	path = repo/3p-minizip-ng
 	url = git@github.com:slviewer-3p/3p-minizip-ng
-[submodule "repo/3p-ndphysicsstub"]
-	path = repo/3p-ndphysicsstub
-	url = git@github.com:slviewer-3p/3p-ndphysicsstub
 [submodule "repo/3p-nghttp2"]
 	path = repo/3p-nghttp2
 	url = git@github.com:slviewer-3p/3p-nghttp2
@@ -85,9 +73,6 @@
 [submodule "repo/3p-openjpeg2"]
 	path = repo/3p-openjpeg2
 	url = git@github.com:slviewer-3p/3p-openjpeg2
-[submodule "repo/3p-open-libndofdev_sdl1"]
-	path = repo/3p-open-libndofdev_sdl1
-	url = git@github.com:slviewer-3p/3p-open-libndofdev_sdl1
 [submodule "repo/3p-open-libndofdev_sdl2"]
 	path = repo/3p-open-libndofdev_sdl2
 	url = git@github.com:slviewer-3p/3p-open-libndofdev_sdl2
@@ -97,9 +82,6 @@
 [submodule "repo/3p-pcre"]
 	path = repo/3p-pcre
 	url = git@github.com:slviewer-3p/3p-pcre
-[submodule "repo/3p-sdl1"]
-	path = repo/3p-sdl1
-	url = git@github.com:slviewer-3p/3p-sdl1
 [submodule "repo/3p-sdl2"]
 	path = repo/3p-sdl2
 	url = git@github.com:slviewer-3p/3p-sdl2
