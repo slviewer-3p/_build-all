@@ -136,3 +136,6 @@
 [submodule "repo/3p-glh_linear"]
 	path = repo/3p-glh_linear
 	url = git@github.com:slviewer-3p/3p-glh_linear.git
+[submodule "repo/3p-xxhash"]
+	path = repo/3p-xxhash
+	url = git@github.com:slviewer-3p/3p-xxhash.git
