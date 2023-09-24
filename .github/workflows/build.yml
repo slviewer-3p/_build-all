@@ -16,6 +16,10 @@ jobs:
       - name: Run apt update
         if: runner.os == 'Linux'
         run: sudo apt update
+
+      - name: Run apt upgrade
+        if: runner.os == 'Linux'
+        run: sudo apt upgrade
         
       - name: Install required packages
         if: runner.os == 'Linux'
