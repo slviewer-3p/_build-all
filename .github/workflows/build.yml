@@ -23,7 +23,7 @@ jobs:
         
       - name: Install required packages
         if: runner.os == 'Linux'
-        run: sudo apt install -y mesa-common-dev libgl1-mesa-dev libglu1-mesa-dev autoconf libtool  libxext-dev libgstreamer1.0-dev  gawk gtk-doc-tools  gettext gperf libibus-1.0-dev fcitx-libs-dev libudev-dev libunwind-15-dev
+        run: sudo apt install -y mesa-common-dev libgl1-mesa-dev libglu1-mesa-dev autoconf libtool  libxext-dev libgstreamer1.0-dev  gawk gtk-doc-tools  gettext gperf libibus-1.0-dev fcitx-libs-dev libudev-dev libunwind-15-dev libgstreamer-plugins-base1.0-dev
 
       - name: Try install python-is-python3 (not available in 1804)
         continue-on-error: true
