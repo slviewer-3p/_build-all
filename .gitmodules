@@ -139,3 +139,9 @@
 [submodule "repo/3p-xxhash"]
 	path = repo/3p-xxhash
 	url = git@github.com:slviewer-3p/3p-xxhash.git
+[submodule "repo/3p-sdl3"]
+	path = repo/3p-sdl3
+	url = git@github.com:slviewer-3p/3p-sdl3.git
+[submodule "repo/3p-open-libndofdev_sdl3"]
+	path = repo/3p-open-libndofdev_sdl3
+	url = git@github.com:slviewer-3p/3p-open-libndofdev_sdl3.git
